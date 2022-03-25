@@ -1,0 +1,1 @@
+export type AuthState = 'Undefined' | 'Register Required' | 'Enter app passcode' | 'Allow enter'

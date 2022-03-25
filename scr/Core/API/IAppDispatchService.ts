@@ -10,4 +10,6 @@ export interface IAppDispatchService {
     */
     navigate<T extends Object = {}>(route: string, params?: T): void;
 
+    emitEvent(key: string, ...args: any[])
+
 };

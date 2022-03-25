@@ -1,5 +1,3 @@
-import type { DependenciesContainer } from "../../Core/models/DependenciesContainer";
+import type { IBaseProps } from "./IBaseProps";
 
-export interface IMainScreen {
-    deps: DependenciesContainer;
-};
+export interface IMainScreen extends IBaseProps { };

@@ -1,3 +1,5 @@
+import type { IAuthService } from "../API/IAuthService";
+import { IEstimateManagerService } from "../API/IEstimateManagerService";
 import type { IEventsService } from "../API/IEventsService";
 import type { IReqresService } from "../API/IReqresService";
 
@@ -8,4 +10,6 @@ import type { IReqresService } from "../API/IReqresService";
 export type DependenciesContainer = {
     reqresService: IReqresService;
     eventsService: IEventsService;
+    authService: IAuthService;
+    estimateManagerService: IEstimateManagerService
 };

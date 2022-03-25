@@ -4,6 +4,7 @@
 * @abstract
 */
 export abstract class ObjectModel {
+    private serializedValue: string;
 
     /**
     * @has
@@ -27,5 +28,14 @@ export abstract class ObjectModel {
             };
         };
     };
+
+    public serialize(): string {
+        this.serializedValue = JSON.stringify(this);
+        return this.serializedValue;
+    };
+
+    public parse(): typeof this {
+        return JSON.parse(this.serializedValue);
+    }
 
 };
